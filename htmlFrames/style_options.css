@@ -273,21 +273,27 @@ body {
     cursor: pointer;
   }
 
-/* The next two tags make the "SAVE & EXIT", and the "RESE%T OPTIONS" stay in the bottom right corner permanently
-*/
-  #exitOptionsButton{
-    position: fixed;
+/* The next two tags make the "SAVE & EXIT", and the "RESET OPTIONS" stay in the bottom right corner permanently*/
+   #exitOptionsButton{
+    position: relative;
     width: 12vw;
-    bottom:100px;
-    right:30px;
   }
 
   #resetOptionsPage{
+    position: relative;
+    width: 12vw;
+ }
+
+/* Holds the exitOptionsButton and the resetOptionsPage buttons so they work on different sized screens*/
+  .buttonsContainer
+  {
     position: fixed;
     width: 12vw;
     bottom: 20px;
     right: 30px;
   }
+
+
 
   #progressBarAggregateTool {
     position: relative;
