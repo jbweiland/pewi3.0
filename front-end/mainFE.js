@@ -122,17 +122,13 @@ function animate() {
     //The four if statements check if the four side of the pewi shed bounds for the camera pass a specific point set
     //and if it does it resets it to that specific position set.
     //If it doesnt the camera moves normally.
-    // if (camera2.position.x - Math.sin(camera2.rotation.y + Math.PI / 2) * player.speed >= 265)
-    if (camera2.position.x >= 265)
+    if (camera2.position.x - Math.sin(camera2.rotation.y + Math.PI / 2) * player.speed >= 265)
     camera2.position.x = 264;
-    // if (camera2.position.x - Math.sin(camera2.rotation.y + Math.PI / 2) * player.speed <= -265)
-    else if (camera2.position.x <= -265)
+    if (camera2.position.x - Math.sin(camera2.rotation.y + Math.PI / 2) * player.speed <= -265)
     camera2.position.x = -264;
-    // if (camera2.position.z - Math.cos(camera2.rotation.y + Math.PI / 2) * player.speed >= 300)
-    else if (camera2.position.z >= 300)
+    if (camera2.position.z - Math.cos(camera2.rotation.y + Math.PI / 2) * player.speed >= 300)
     camera2.position.z = 299;
-    // if (camera2.position.z - Math.cos(camera2.rotation.y + Math.PI / 2) * player.speed <= -300)
-    else if (camera2.position.z <= -300)
+    if (camera2.position.z - Math.cos(camera2.rotation.y + Math.PI / 2) * player.speed <= -300)
     camera2.position.z = -299;
     else
     camera2.position.z -= Math.cos(camera2.rotation.y + Math.PI / 2) * player.speed;
@@ -148,17 +144,13 @@ function animate() {
     //The four if statements check if the four side of the pewi shed bounds for the camera pass a specific point set
     //and if it does it resets it to that specific position set.
     //If it doesnt the camera moves normally.
-    // if (camera2.position.x - Math.sin(camera2.rotation.y - Math.PI / 2) * player.speed >= 265)
-    if (camera2.position.x  >= 265)
+    if (camera2.position.x - Math.sin(camera2.rotation.y - Math.PI / 2) * player.speed >= 265)
     camera2.position.x = 264;
-    // if (camera2.position.x - Math.sin(camera2.rotation.y - Math.PI / 2) * player.speed <= -265)
-    else if (camera2.position.x <= -265)
+    if (camera2.position.x - Math.sin(camera2.rotation.y - Math.PI / 2) * player.speed <= -265)
     camera2.position.x = -264;
-    // if (camera2.position.z - Math.cos(camera2.rotation.y - Math.PI / 2) * player.speed >= 300)
-    else if (camera2.position.z >= 300)
+    if (camera2.position.z - Math.cos(camera2.rotation.y - Math.PI / 2) * player.speed >= 300)
     camera2.position.z = 299;
-    // if (camera2.position.z - Math.cos(camera2.rotation.y - Math.PI / 2) * player.speed <= -300)
-    else if (camera2.position.z  <= -300)
+    if (camera2.position.z - Math.cos(camera2.rotation.y - Math.PI / 2) * player.speed <= -300)
     camera2.position.z = -299;
     else
     camera2.position.z -= Math.cos(camera.rotation.y - Math.PI / 2) * player.speed;
